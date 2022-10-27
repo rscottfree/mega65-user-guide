@@ -5,7 +5,8 @@ pipeline {
     stages {
         stage('Clone libc and core') {
             steps {
-                sh "whoami ; echo $HOME"
+                sh "whoami"
+                sh "echo $HOME"
                 sh "rm -rf mega65-libc; git clone https://github.com/MEGA65/mega65-libc.git"
                 sh "rm -rf mega65-core; git clone --branch=development https://github.com/MEGA65/mega65-core.git"
             }
