@@ -67,7 +67,7 @@ HYPPO_EXAMPLES= $(wildcard $(EXAMPLEDIR)/appendix-hypervisor-calls/*.asm)
 	./prg2tex -u $<
 
 keymap_table_1.tex keymap_table_2.tex keymap_table_3.tex keymap_table_4.tex keymap_table_5.tex unicode_mapping.tex:	keymap
-	./keymap
+	./keymap $(REPOPATH)/mega65-core/src/vhdl/matrix_to_ascii.vhdl
 
 api-conio.tex:	libc-doc $(REPOPATH)/mega65-libc/cc65/include/conio.h
 	./libc-doc $(REPOPATH)/mega65-libc/cc65/include/conio.h > api-conio.tex
