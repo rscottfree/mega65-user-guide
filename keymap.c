@@ -101,7 +101,7 @@ int keyid(int k)
 
 int main(int argc,char **argv)
 {
-  FILE *f=fopen("../mega65-core/src/vhdl/matrix_to_ascii.vhdl","r");
+  FILE *f=fopen("./mega65-core/src/vhdl/matrix_to_ascii.vhdl","r");
   if (!f) {
     fprintf(stderr,"ERROR: Could not read ../mega65-core/src/vhdl/matrix_to_ascii.vhdl.\n");
     exit(-1);
