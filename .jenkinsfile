@@ -3,6 +3,9 @@ pipeline {
         docker { image 'megabuild' }
     }
     stages {
+        stage('Cleanup') {
+            sh 'make realclean'
+        }
         stage('Clone libc and core') {
             steps {
                 sh "rm -rf mega65-libc; git clone https://github.com/MEGA65/mega65-libc.git"
