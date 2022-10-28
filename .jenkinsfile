@@ -4,7 +4,9 @@ pipeline {
     }
     stages {
         stage('Cleanup') {
-            sh 'make realclean'
+            steps {
+                sh 'make realclean'
+            }
         }
         stage('Clone libc and core') {
             steps {
