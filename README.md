@@ -16,6 +16,8 @@ https://github.com/MEGA65/mega65-user-guide/releases
 
 # Installation
 
+This is just a Test!
+
 ## Requirements
 
 - MingW32 (tested on MinGW-6.3.0, and MinGW-8.1.0) for Windows or GCC Compiler for Linux / Mac OS X.
